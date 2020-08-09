@@ -1,0 +1,45 @@
+.header-container{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    min-width: 100%;
+    font-size: 1rem;
+    border: 1px solid #f1f1f1;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    height:60px;
+}
+
+.header-container>.company-logo{
+    flex:none;
+    order:0;
+}
+
+.header-container>.company-name{
+    flex:none;
+    order:1;
+    padding: 20px;
+}
+
+.header-container>.profile-icon{
+    flex:none;
+    order:2;
+    margin-left: auto;
+}
+
+.user-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-display>img{
+    order: 0;
+}
+
+.user-display>span{
+    order: 1;
+    margin-left: auto;
+    padding: 20px;
+}

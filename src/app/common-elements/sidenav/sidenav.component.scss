@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+
+@mixin abc-corp-sidenav($theme, $fontcolor, $backgroungrey) {
+  $primary: map-get($theme, primary);
+  $warn: map-get($theme, warn);
+
+  .home-icon{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 10px;
+    color: $fontcolor;
+    font-weight: 400;
+    border-right: 4px solid rgba(19, 18, 19, 0.067);
+    background-color: $backgroungrey;
+  }
+  .home-icon>span{
+    margin-left: auto;
+  }
+}

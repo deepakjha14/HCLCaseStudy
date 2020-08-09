@@ -1,0 +1,14 @@
+.manipanel-container{
+    display: grid;
+    grid-template: "sidenav sidenavcontent" / 200px 1fr;   
+}
+
+.sidenav{
+    grid-area: sidenav;
+    top: 60px;
+    width: 200px;
+  }
+  
+.sidenavcontent{
+    grid-area: sidenavcontent;
+}

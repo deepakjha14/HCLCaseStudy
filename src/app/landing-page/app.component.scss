@@ -1,0 +1,6 @@
+@import '~@angular/material/theming';
+
+@mixin abc-corp-theme($theme, $fontcolor, $backgroungrey) {
+  $primary: map-get($theme, primary);
+  $warn: map-get($theme, warn);
+}
