@@ -7,6 +7,7 @@ import { MaterialComponentsModule } from '../material-components/material-compon
 import { SidenavcontentComponent } from './sidenavcontent/sidenavcontent.component';
 import { MainpanelComponent } from './mainpanel/mainpanel.component';
 import { TopstockpriceComponent } from './topstockprice/topstockprice.component';
+import { OfflineComponent } from './offline/offline.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TopstockpriceComponent } from './topstockprice/topstockprice.component'
     SidenavComponent,
     SidenavcontentComponent,
     MainpanelComponent,
-    TopstockpriceComponent
+    TopstockpriceComponent,
+    OfflineComponent
   ],
   imports: [
     CommonModule,

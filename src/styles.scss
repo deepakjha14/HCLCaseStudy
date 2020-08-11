@@ -41,7 +41,7 @@ $backgroungrey: #f5f6fa;
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #fafafa;}
 
 // Website layout planning using grids
 
@@ -61,11 +61,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   /*grid-template-rows:200px 200px 200px; */
 }
 
+.topheader{
+  grid-area: topheader;
+}
+
 .mainpanel{
   grid-area: mainpanel;
   top: 60px;
 }
 
-.topheader{
-  grid-area: topheader;
-}

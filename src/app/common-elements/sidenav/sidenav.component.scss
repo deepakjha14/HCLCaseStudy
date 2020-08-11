@@ -5,6 +5,7 @@
   $warn: map-get($theme, warn);
 
   .home-icon{
+    transition: box-shadow .3s;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -17,5 +18,10 @@
   }
   .home-icon>span{
     margin-left: auto;
+  }
+  .home-icon:hover{
+    transform: scale(1.04, 1.04);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-right: 8px solid rgba(19, 18, 19, 0.067);
   }
 }
