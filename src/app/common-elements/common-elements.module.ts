@@ -9,6 +9,10 @@ import { MainpanelComponent } from './mainpanel/mainpanel.component';
 import { TopstockpriceComponent } from './topstockprice/topstockprice.component';
 import { OfflineComponent } from './offline/offline.component';
 
+//state management related
+import { StoreModule } from '@ngrx/store';
+import * as fromMainPanel from './store/abccorp.mainpanel.reducer';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -20,7 +24,8 @@ import { OfflineComponent } from './offline/offline.component';
   ],
   imports: [
     CommonModule,
-    MaterialComponentsModule
+    MaterialComponentsModule,
+    StoreModule.forFeature(fromMainPanel.mainpanelFeatureKey, fromMainPanel.reducer)
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports:[
