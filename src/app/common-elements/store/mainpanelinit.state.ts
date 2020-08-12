@@ -1,9 +1,6 @@
-
-
 export interface State {
     StockPrice: StockPrice[];
-    AllStocks: AllStocks[];
-    
+    AllStocks: AllStocks[];  
   }
 
 export class StockPrice{
@@ -16,7 +13,6 @@ export class StockPrice{
         this.ltp = ltp,
         this.percentchange = percentchange,
         this.change = change
-
     }
 }
 
@@ -32,6 +28,5 @@ export class AllStocks{
         this.percentchange = percentchange;
         this.change = change;
         this.volume = volume;
-
     }
 }

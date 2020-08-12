@@ -12,6 +12,7 @@ import { OfflineComponent } from './offline/offline.component';
 //state management related
 import { StoreModule } from '@ngrx/store';
 import * as fromMainPanel from './store/abccorp.mainpanel.reducer';
+import { MainpanelFacadeService } from './mainpaneldata/mainpanel.facade.service';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import * as fromMainPanel from './store/abccorp.mainpanel.reducer';
   exports:[
     HeaderComponent,
     MainpanelComponent
-  ]
+  ],
+  providers: [ MainpanelFacadeService ]
 })
 export class CommonElementsModule { }
