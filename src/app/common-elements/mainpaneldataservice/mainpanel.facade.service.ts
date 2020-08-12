@@ -1,5 +1,6 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { Store, select } from '@ngrx/store';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,18 +12,14 @@ export class MainpanelFacadeService implements OnDestroy{
   constructor(private readonly store: Store<any>) { 
   }
 
-  getTopStockPrice(){
-    return this.topStockPrice$.subscribe((res: any)=>{
-      res.StockPrice;
-    })
+  getTopStockPrice() : Observable<any>{
+    return this.topStockPrice$;
   }
 
-  getAllStockPrice(){
-    return this.topStockPrice$.subscribe((res: any)=>{
-      res.AllStockPrice;
-    })
+  getAllStockPrice() : Observable<any>{
+    return this.topStockPrice$;
   }
-  ngDestroy(){
+  ngOnDestroy(){
     // unsubscribe logic comes here
   }
 }

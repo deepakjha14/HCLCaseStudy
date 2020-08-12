@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidenavcontent',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenavcontent.component.scss']
 })
 export class SidenavcontentComponent implements OnInit {
+  @Input() allStockData : any;
+  @Input() topStockData : any;
+  allStockPriceData;
+  topStockPriceData;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.allStockPriceData = this.allStockData;
+    this.topStockPriceData = this.topStockData;
   }
 
 }

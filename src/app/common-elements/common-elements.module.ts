@@ -12,7 +12,7 @@ import { OfflineComponent } from './offline/offline.component';
 //state management related
 import { StoreModule } from '@ngrx/store';
 import * as fromMainPanel from './store/abccorp.mainpanel.reducer';
-import { MainpanelFacadeService } from './mainpaneldata/mainpanel.facade.service';
+import { MainpanelFacadeService } from './mainpaneldataservice/mainpanel.facade.service';
 
 @NgModule({
   declarations: [
