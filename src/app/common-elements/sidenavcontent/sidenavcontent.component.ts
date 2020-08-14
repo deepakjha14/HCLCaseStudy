@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { StockPrice } from '../store/mainpanelinit.state';
 
 @Component({
   selector: 'app-sidenavcontent',
@@ -10,12 +11,18 @@ export class SidenavcontentComponent implements OnInit {
   @Input() topStockData : any;
   allStockPriceData;
   topStockPriceData;
+  chartData: any = [];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.allStockPriceData = this.allStockData;
+    const dataArray = [];
     this.topStockPriceData = this.topStockData;
+    this.topStockPriceData.forEach((res:any)=>{
+      dataArray.push({"x":res.change,"y":res.percentchange,"indexLabel":res.companyName});
+    });
+    this.chartData = {"plotData": dataArray}
+    this.allStockPriceData = this.allStockData; 
   }
 
 }
