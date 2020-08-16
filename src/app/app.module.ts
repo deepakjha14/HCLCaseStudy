@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './landing-page/app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonElementsModule } from './common-elements/common-elements.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { CommonElementsModule } from './common-elements/common-elements.module';
     StoreDevtoolsModule.instrument({
       maxAge: 100, // Retains last `100` states
     }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
