@@ -1,5 +1,5 @@
 <div class="sidenavcontent-container">
     <app-topstockprice class="stockprice" [topStockData]="topStockPriceData"></app-topstockprice>
     <top-stocks class="topstock" [chartData]="chartData"></top-stocks>
-    <div class="allstocks">All stocks will appear here if the sentense is big it will cover both the quardents</div>
+    <app-allstocks [allStockData]="topStockPriceData" class="allstocks"></app-allstocks>
 </div>

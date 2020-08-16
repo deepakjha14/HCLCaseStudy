@@ -13,6 +13,7 @@ import { OfflineComponent } from './offline/offline.component';
 import { StoreModule } from '@ngrx/store';
 import * as fromMainPanel from './store/abccorp.mainpanel.reducer';
 import { MainpanelFacadeService } from './mainpaneldataservice/mainpanel.facade.service';
+import { AllstocksComponent } from './allstocks/allstocks.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MainpanelFacadeService } from './mainpaneldataservice/mainpanel.facade.
     SidenavcontentComponent,
     MainpanelComponent,
     TopstockpriceComponent,
-    OfflineComponent
+    OfflineComponent,
+    AllstocksComponent
   ],
   imports: [
     CommonModule,

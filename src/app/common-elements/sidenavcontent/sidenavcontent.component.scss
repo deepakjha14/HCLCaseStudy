@@ -1,9 +1,4 @@
-.sidenavcontent-container{
-    display: grid;
-    grid-template: "stockprice topstock" 1fr
-                    "allstocks allstocks"/1fr 1fr;
-    padding: 5%;
-}
+
 
 .stockprice{
     grid-area: stockprice;
@@ -15,9 +10,28 @@
 
 .allstocks{
     grid-area: allstocks;
-    padding: 5%;
+    padding: 16px;
 }
 
 #ABCCorpContainer{
     box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
+
+@media only screen and (max-width: 850px) {
+    .sidenavcontent-container{
+        display: grid;
+        grid-template: "stockprice" 1fr
+                        "topstock" 1fr
+                        "allstocks"/1fr 1fr;
+        padding: 5%;
+    }
+  }
+
+@media only screen and (min-width: 851px) {
+    .sidenavcontent-container{
+        display: grid;
+        grid-template: "stockprice topstock" 1fr
+                        "allstocks allstocks"/1fr 1fr;
+        padding: 5%;
+    }
+  }
