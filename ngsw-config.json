@@ -11,7 +11,8 @@
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
-          "/*.js"
+          "/*.js",
+          "https://canvasjs.com/assets/script/canvasjs.min.js"
         ]
       }
     },
