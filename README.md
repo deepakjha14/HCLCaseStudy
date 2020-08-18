@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This trivial application uses a web component which is generated using litelement. The repository of the same project is as follows, https://github.com/deepakjha14/HCLCaseStudyWebComponent. Web component is included in the app using the manual transfer of webcomponent build package. It is not done using the npm. This application also uses the Redux for state management.
 
+Please open and read the .pdf file provided in this assignment as `ABC Portfolio solution.pdf` which talks about very high level solution of the assignment.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
